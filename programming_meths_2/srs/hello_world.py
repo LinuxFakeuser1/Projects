@@ -1,0 +1,8 @@
+print("Alan Anguiano Ayala")
+print("Alan Anguiano Ayala")
+print("Alan Anguiano Ayala")
+#Hola(Hola mundo cruel)
+print("Alan Anguiano Ayala")
+print("Alan Anguiano Ayala")
+print("Alan Anguiano Ayala")
+print(5+1)
