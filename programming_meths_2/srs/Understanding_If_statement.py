@@ -44,3 +44,5 @@ print (age < 21) # True
 print (age <= 21)# True
 print (age > 21) # True
 print (age >= 21)# True
+
+print("hola"<"hola")

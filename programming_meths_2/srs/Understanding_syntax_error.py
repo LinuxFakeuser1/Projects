@@ -1,7 +1,7 @@
 # Eliminación de espacios en blanco
-programming_language = "     |python     "
+programming_language = "     |python|     "
 print(programming_language)
-print("fecto del lstrip")
+print("efecto del lstrip")
 print(programming_language.lstrip())
 print("efecto del rstrip")
 print(programming_language.rstrip())
