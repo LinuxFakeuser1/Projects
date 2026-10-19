@@ -1,0 +1,47 @@
+# problem1
+
+"""
+Problem 1: Temperature converter
+
+Description: The program receives a temperature in Celsius and converts it
+to Fahrenheit and Kelvin. It also determines the boolean is_high_temperature,
+which is true when the temperature is greater than or equal to 30.0 °C.
+Physically impossible temperatures are rejected.
+
+Inputs:
+- temperature_n (string): temperature in °C entered with input(),
+  converted to float in the variable temperature.
+
+Outputs:
+- "<temp_f> farenheit"
+- "<temp_k> kelvin"
+- "high temperature?<is_high_temperature>"
+- "Fisically imposible, dummy" if the temperature is out of range.
+
+Validations:
+- temp_k must not be below 0.0 (absolute zero).
+- temp_k must not be above plank_t (Planck temperature).
+
+"""
+#Captures the and checks temperature in celsius
+temperature_n = input("enter the room temperature, (On Celsius): ")
+temperature = float(temperature_n)
+
+temperature = float(temperature_n)
+#plank temperature
+plank_t = (1.416784 * 10**32) 
+# temperature covertions
+
+temp_f = temperature * 9 / 5 + 32
+ 
+temp_k = temperature + 273.15
+
+is_high_temperature = (temperature >= 30.0)
+if temp_k <0.0 or temp_k > plank_t:
+    print("Fisically imposible, dummy")
+else:
+
+    print(f"high temperature?{is_high_temperature} ")
+    print(f"{temp_f} farenheit")
+    print(f"{temp_k} kelvin")
+

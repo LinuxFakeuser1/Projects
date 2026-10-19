@@ -1,0 +1,4 @@
+texto = "Python Es Un Lenguaje Genial"
+
+# Tomamos el carácter en la posición [0] de cada palabra
+resultado = [palabra[0] for palabra in texto.split()]
