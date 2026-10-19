@@ -1,0 +1,60 @@
+# Problem2
+"""
+Problem 2: Points and distances with tuples
+
+Description: The program takes two points on a plane, saves each one in a
+tuple and shows the distance between them and the point in the middle.
+
+Inputs:
+- x1, y1, x2, y2 (float): coordinates of the two points.
+
+Outputs:
+- "Point A: (x1, y1)"
+- "Point B: (x2, y2)"
+- "Distance: <distance>"
+- "Midpoint: (mx, my)"
+- "Error: invalid input" if a value is not a number.
+
+Validations:
+- The four values have to be numbers.
+
+Test cases:
+1) Normal: (1, 1) and (4, 5)
+   -> Distance: 5.0
+      Midpoint: (2.5, 3.0)
+
+2) Border: (7, 7) and (7, 7), same point
+   -> Distance: 0.0
+      Midpoint: (7.0, 7.0)
+
+3) Error: "xyz" in x1
+   -> Error: invalid input (and it asks again)
+"""
+
+# Keep asking until the four coordinates are valid numbers
+while True:
+    try:
+        x1 = float(input("Type coords x1: "))
+        y1 = float(input("Type coords y1: "))
+        x2 = float(input("Type coords x2: "))
+        y2 = float(input("Type coords y2: "))
+
+        # Store each point inside its own tuple
+        point_a = (x1, y1)
+        point_b = (x2, y2)
+
+        # Calculate the separation between both points and their center
+        delta_x = x2 - x1
+        delta_y = y2 - y1
+        distance = (delta_x**2 + delta_y**2)**0.5
+        middle_point = ((x1 + x2) / 2, (y1 + y2) / 2)
+
+        print(f"Point A: {point_a}")
+        print(f"Point B: {point_b}")
+        print(f"Distance: {distance}")
+        print(f"Midpoint: {middle_point}")
+
+        break  # all good, exit the loop
+
+    except ValueError:
+        print("Error: invalid input")
